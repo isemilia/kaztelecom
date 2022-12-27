@@ -8,12 +8,84 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="assets/css/reset.min.css">
     <link rel="stylesheet" href="assets/css/home.min.css">
 </head>
 <body>
 
-    
+    <header class="header">
+        <div class="header-wrap">
+            <div class="header-left">
+                <a href="#" class="header-logo">
+                    <img src="assets/img/ismet-logo.svg" alt="ismet">
+                </a>
+                <a href="#" class="header-logo">
+                    <img src="assets/img/ofd-logo.svg" alt="ofd">
+                </a>
+                <a href="#" class="header-logo">
+                    <img src="assets/img/kaztel-logo.svg" alt="kazakhtelecom">
+                </a>
+            </div>
+            <div class="menu" data-menu>
+                <div class="menu-head">
+                    <div class="menu-langs">
+                        <a href="#" class="menu-lang menu-lang--active">Рус</a>
+                        <span>|</span>
+                        <a href="#" class="menu-lang">Каз</a>
+                    </div>
+                </div>
+                <div class="menu-body">
+                    <nav class="menu-nav">
+                        <div class="menu-col">
+                            <a href="#" class="menu-link">Новости</a>
+                            <a href="#" class="menu-link">База знаний</a>
+                            <a href="#" class="menu-link">Участникам</a>
+                            <a href="#" class="menu-link">Тарифы</a>
+                        </div>
+                        <div class="menu-col">
+                            <a href="#" class="menu-link">Мобильная касса</a>
+                            <a href="#" class="menu-link">Проверить чек</a>
+                            <a href="#" class="menu-link">О компании</a>
+                            <a href="#" class="menu-link nowrap">Партнерская программа</a>
+                        </div>
+                        <div class="menu-col">
+                            <a href="#" class="menu-link">Обновления</a>
+                            <a href="#" class="menu-link">Законодательство</a>
+                            <a href="#" class="menu-link">FAQ</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="header-right">
+                <button class="header-trigger" data-menu-trigger>
+                    <img src="assets/img/icons/menu-icon.svg" alt="button to open menu">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1 class="title title--align-left title--light">Подписка ОФД</h1>
+            <div class="hero-text">
+                Экономия бюджета до 23% в год <br>
+                Подключил и забыл
+            </div>
+            <div class="hero-group">
+                <a href="#" class="btn btn--light">
+                    <img src="assets/img/icons/hero-btn-tick.svg" alt="" class="btn-icon">
+                    <span class="btn-label">Активировать</span>
+                </a>
+                <a href="#" class="btn btn--light">
+                    <img src="assets/img/icons/hero-btn-video.svg" alt="" class="btn-icon">
+                    <span class="btn-label">Посмотреть ролик</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/script.js"></script>
     
 </body>
 </html>

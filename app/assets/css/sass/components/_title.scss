@@ -1,0 +1,17 @@
+.title {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 1.45em;
+    text-transform: uppercase;
+    color: var(--clr-100);
+    text-align: center;
+    &--light {
+        color: var(--clr-600);
+    }
+    &--align-left {
+        text-align: left;
+    }
+    &--align-right {
+        text-align: right;
+    }
+}

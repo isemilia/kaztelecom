@@ -1,0 +1,104 @@
+.header {
+    padding: 30px 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    &-left {
+        column-gap: 32px;
+    }
+    &-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-left, &-right {
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 10;
+    }
+    &-trigger {
+        appearance: none;
+        border: 0;
+        background: transparent;
+        width: 30px;
+        height: 30px;
+        padding: 0;
+    }
+    .menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(256.66deg, var(--clr-300) 0%, var(--clr-200) 114.89%);
+        padding-top: 20px;
+        padding-right: 120px;
+        z-index: 5;
+        transition: all .5s;
+        opacity: 0;
+        visibility: hidden;
+        &-head {
+            display: flex;
+            justify-content: flex-end;
+        }
+        &-langs {
+            font-weight: 400;
+            font-size: 40px;
+            color: var(--clr-400);
+        }
+        &-lang {
+            color: inherit;
+            &--active {
+                color: var(--clr-600);
+            }
+        }
+        &-col {
+            display: flex;
+            flex-direction: column;
+        }
+        &-nav {
+            margin-top: 100px;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 100px;
+            column-gap: 150px;
+        }
+        &-link {
+            font-weight: 400;
+            font-size: 50px;
+            line-height: 100%;
+            color: var(--clr-400);
+            transition: all .3s;
+            position: relative;
+            max-width: max-content;
+            &::before {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 1px;
+                background-color: currentColor;
+                transform: scaleX(0);
+                transform-origin: left bottom;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                transition: transform .5s;
+            }
+            &.nowrap {
+                white-space: nowrap;
+            }
+            &:not(:last-child) {
+                margin-bottom: 65px;
+            }
+            &:hover {
+                color: var(--clr-600);
+                &::before {
+                    transform: scaleX(1);
+                }
+            }
+        }
+    }
+}

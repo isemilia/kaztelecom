@@ -1,0 +1,19 @@
+.hero {
+    background: url('../img/home/home-bg.jpg') center center / cover no-repeat;
+    padding: 165px 0 65px;
+    min-height: 600px;
+    border-radius: 0 0 40px 40px;
+    &-text {
+        font-weight: 400;
+        font-size: 36.5px;
+        line-height: 1.4em;
+        max-width: 560px;
+        color: var(--clr-600);
+    }
+    &-group {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+    }
+}
