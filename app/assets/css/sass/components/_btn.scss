@@ -5,12 +5,11 @@
     min-width: 13.3em;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--border-clr);
-    filter: drop-shadow(0px 0px 10px var(--border-clr));
+    border: 1px solid inherit;
+    filter: drop-shadow(0px 0px 10px inherit);
     border-radius: 11.1em;
     background-color: transparent;
     &-label {
-        color: var(--text-color);
         font-weight: 500;
         font-size: 18px;
         line-height: 1.4em;
@@ -35,7 +34,17 @@
         background-image: url("data:image/svg+xml,%3Csvg width='7' height='11' viewBox='0 0 7 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_202_133)'%3E%3Cpath d='M5.19197 5.48443C4.72107 5.08016 4.25905 4.68478 3.79259 4.28496C2.82413 3.45422 1.85568 2.62348 0.882774 1.79274C0.678421 1.61948 0.562917 1.41068 0.594014 1.13969C0.625111 0.864261 0.771713 0.664349 1.02938 0.55773C1.29592 0.446668 1.5447 0.495536 1.76238 0.677677C2.12222 0.979765 2.48206 1.29074 2.83746 1.59727C4.12134 2.69456 5.40077 3.79629 6.68464 4.88914C6.92453 5.09349 7.06225 5.33783 6.96896 5.6488C6.92453 5.7954 6.83124 5.94645 6.71574 6.04862C5.06314 7.4791 3.39721 8.89625 1.73573 10.3178C1.42031 10.5844 0.980509 10.5488 0.722846 10.2423C0.46074 9.9269 0.505165 9.50042 0.833907 9.22055C2.24217 8.0122 3.65043 6.80829 5.0587 5.59993C5.10312 5.56884 5.13866 5.5333 5.19197 5.48443Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_202_133'%3E%3Crect width='6.44602' height='10' fill='white' transform='translate(0.553955 0.5)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
     }
     &--light {
-        --text-color: var(--clr-600);
         --border-clr: rgba(255, 255, 255, 0.8);
+        border: 1px solid var(--clr-600);
+        filter: drop-shadow(0px 0px 10px var(--border-clr));
+        color: var(--clr-600);
+    }
+    &--medium {
+        border: 1px solid rgba(0, 114, 186, 0.8);
+        filter: drop-shadow(0px 0px 10px rgba(0, 114, 186, 0.3));
+        color: var(--clr-300);
+        &::after {
+            background-image: url("data:image/svg+xml,%3Csvg width='7' height='11' viewBox='0 0 7 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_202_147)'%3E%3Cpath d='M5.19197 5.48385C4.72107 5.07958 4.25905 4.6842 3.79259 4.28438C2.82413 3.45364 1.85568 2.6229 0.882774 1.79216C0.678421 1.6189 0.562917 1.4101 0.594014 1.13911C0.625111 0.863681 0.771713 0.66377 1.02938 0.55715C1.29592 0.446089 1.5447 0.494956 1.76238 0.677097C2.12222 0.979185 2.48206 1.29016 2.83746 1.59669C4.12134 2.69398 5.40077 3.79571 6.68464 4.88856C6.92453 5.09291 7.06225 5.33725 6.96896 5.64822C6.92453 5.79482 6.83124 5.94587 6.71574 6.04804C5.06314 7.47852 3.39721 8.89567 1.73573 10.3173C1.42031 10.5838 0.980509 10.5483 0.722846 10.2417C0.46074 9.92632 0.505165 9.49984 0.833907 9.21997C2.24217 8.01162 3.65043 6.80771 5.0587 5.59935C5.10312 5.56826 5.13866 5.53272 5.19197 5.48385Z' fill='%230072BA'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_202_147'%3E%3Crect width='6.44602' height='10' fill='white' transform='translate(0.553955 0.49939)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+        }
     }
 }

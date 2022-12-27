@@ -8,8 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="assets/css/reset.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
     <link rel="stylesheet" href="assets/css/home.min.css">
 </head>
 <body>
@@ -66,7 +68,7 @@
         </div>
     </header>
 
-    <section class="hero">
+    <section class="hero" data-page="home">
         <div class="container">
             <h1 class="title title--align-left title--light">Подписка ОФД</h1>
             <div class="hero-text">
@@ -86,7 +88,64 @@
         </div>
     </section>
 
+    <section class="spv-100 useful">
+        <div class="container">
+            <h2 class="title useful-title">Полезное</h2>
+
+            <div class="useful-wrap">
+
+                <div class="swiper useful-swiper">
+                    <div class="swiper-wrapper">
+                        
+                        <div class="swiper-slide useful-slide">
+                            <div class="card-100 useful-card">
+                                <div class="useful-card-img">
+                                    <img src="assets/img/home/useful-img-1.png" alt="e kassa">
+                                </div>
+                                <h3 class="useful-card-title">
+                                    Мобильная касса <br>
+                                    E-Kassa пользователю
+                                </h3>
+                                <a href="#" class="btn btn--medium useful-card-btn">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide useful-slide">
+                            <div class="card-100 useful-card">
+                                <div class="useful-card-img">
+                                    <img src="assets/img/home/useful-img-2.png" alt="e kassa">
+                                </div>
+                                <h3 class="useful-card-title">
+                                    Клиентам <br>
+                                    услуги ОФД
+                                </h3>
+                                <a href="#" class="btn btn--medium useful-card-btn">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide useful-slide">
+                            <div class="card-100 useful-card">
+                                <div class="useful-card-img">
+                                    <img src="assets/img/home/useful-img-3.png" alt="e kassa">
+                                </div>
+                                <h3 class="useful-card-title">
+                                    Платформа для бизнеса <br>
+                                    Ismet.kz
+                                </h3>
+                                <a href="#" class="btn btn--medium useful-card-btn">Подробнее</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="useful-pagination"></div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="assets/js/useful.js"></script>
     <script src="assets/js/header.js"></script>
-    
 </body>
 </html>

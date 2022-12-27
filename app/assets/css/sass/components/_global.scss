@@ -8,3 +8,19 @@
     max-width: 1440px;
     margin: 0 auto;
 }
+
+body {
+    background-color: var(--clr-500);
+}
+
+// section padding vertical type 1
+.spv-100 {
+    padding: 42px 0;
+}
+
+.card-100 {
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 0px 40px #FFFFFF;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+}
