@@ -1,5 +1,21 @@
 .activate {
     --icon-bg-size: 160px;
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        background-image: url('../img/decorations/blue-blur-right.png');
+        width: 607px;
+        height: 969px;
+        display: block;
+        filter: blur(70px);
+        opacity: .25;
+    }
     &-wrap {
         margin-top: 120px;
         display: flex;
