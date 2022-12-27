@@ -26,9 +26,26 @@
         width: 30px;
         height: 30px;
         padding: 0;
+        position: relative;
+        .close, .open {
+            transition: all .3s;
+        }
+        .close {
+            opacity: 0;
+            position: absolute;
+            top: 0;
+        }
+        &--active {
+            .open {
+                opacity: 0;
+            }
+            .close {
+                opacity: 1;
+            }
+        }
     }
     .menu {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         width: 100%;
@@ -40,6 +57,10 @@
         transition: all .5s;
         opacity: 0;
         visibility: hidden;
+        &--active {
+            opacity: 1;
+            visibility: visible;
+        }
         &-head {
             display: flex;
             justify-content: flex-end;
