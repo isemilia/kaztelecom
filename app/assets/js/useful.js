@@ -22,8 +22,8 @@ window.addEventListener('DOMContentLoaded', () => {
       
         // Navigation arrows
         navigation: {
-          nextEl: '.useful-btn-next',
-          prevEl: '.useful-btn-prev',
+          nextEl: '.useful-btn--next',
+          prevEl: '.useful-btn--prev',
         },
     });
 })

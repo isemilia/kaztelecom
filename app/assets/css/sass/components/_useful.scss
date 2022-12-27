@@ -3,12 +3,16 @@
     &-card {
         max-width: 480px;
         padding: 50px 46px 40px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
         transform: scale(1);
         backface-visibility: hidden;
         transition: all .5s;
+        display: grid;
+        justify-items: center;
+        grid-template-rows: 314px;
+        grid-auto-rows: auto;
         &-title {
             margin-top: 12px;
             font-weight: 700;
@@ -39,6 +43,10 @@
         margin-top: 40px;
         display: flex;
         justify-content: center;
+        // position: absolute;
+        z-index: 20;
+        inset: unset;
+        // bottom: -50px !important;
         .swiper-pagination-bullet {
             width: 14px;
             height: 14px;
@@ -48,5 +56,21 @@
                 background-color: var(--clr-300);
             }
         }
+    }
+    &-nav {
+        position: absolute;
+        top: 48%;
+        transform: translateY(-50%);
+        z-index: 20;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    &-btn {
+        background: transparent;
+        border: 0;
+    }
+    &-wrap {
+        position: relative;
     }
 }
