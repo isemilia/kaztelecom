@@ -11,9 +11,11 @@
         transition: all .5s;
         display: grid;
         justify-items: center;
-        grid-template-rows: 314px;
         grid-auto-rows: auto;
         position: relative;
+        @media (min-width: 1440px) {
+            grid-template-rows: 314px;
+        }
         &-title {
             margin-top: 12px;
             font-weight: 700;

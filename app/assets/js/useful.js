@@ -10,9 +10,9 @@ window.addEventListener('DOMContentLoaded', () => {
         speed: 500,
 
         breakpoints: {
-            1024: {
+            768: {
                 slidesPerView: 3
-            }
+            },
         },
       
         // If we need pagination
