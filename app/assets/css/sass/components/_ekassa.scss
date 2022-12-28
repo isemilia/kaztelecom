@@ -1,6 +1,27 @@
 .main {
     padding: 100px 0;
     color: var(--clr-100);
+    position: relative;
+    &::before, &::after {
+        content: '';
+        background: url('../img/decorations/grey-circle.png') center center / contain no-repeat;
+        width: var(--ball-size);
+        height: var(--ball-size);
+        display: block;
+        position: absolute;
+        border-radius: 100%;
+        z-index: -1;
+    }
+    &::before {
+        --ball-size: 153px;
+        left: -70px;
+        top: 227px;
+    }
+    &::after {
+        --ball-size: 80px;
+        left: 50%;
+        bottom: 168px;
+    }
     &-grid {
         display: grid;
         grid-template-columns: 1fr 360px;
