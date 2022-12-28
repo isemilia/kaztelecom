@@ -1,0 +1,20 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+@import 'components/global';
+
+/* e-kassa-01.html */
+
+@import 'components/title';
+@import 'components/btn';
+
+@import 'components/header';
+@import 'components/hero';
+
+@import 'components/ekassa';
+
+@import 'components/footer';
+
+body {
+    background-image: url('../img/decorations/body-bg.png') center top / cover no-repeat !important;
+}

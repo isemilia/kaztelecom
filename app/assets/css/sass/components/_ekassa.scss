@@ -1,0 +1,50 @@
+.main {
+    padding: 100px 0;
+    color: var(--clr-100);
+    &-subtitle {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.2em;
+        a {
+            color: var(--clr-300);
+            text-decoration: underline;
+        }
+    }
+    &-text {
+        margin-top: 33px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.4em;
+        max-width: 960px;
+    }
+    .reasons {
+        margin-top: 44px;
+        &-wrap {
+            display: grid;
+            &[data-cols='1'] {
+                grid-template-columns: 1fr;
+            }
+        }
+        &-item {
+            display: flex;
+            align-items: center;
+            column-gap: 30px;
+            &-icon {
+                height: 70px;
+                width: 70px;
+                display: grid;
+                place-content: center;
+            }
+            &-title {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 1.4em;
+            }
+            &-text {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 1.4em;
+            }
+        }
+    }
+}

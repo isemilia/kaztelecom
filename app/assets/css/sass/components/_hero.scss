@@ -5,12 +5,19 @@
     &[data-page=home] {
         background: url('../img/home/home-bg.jpg') center center / cover no-repeat;
     }
+    &[data-page=ekassa01] {
+        background: url('../img/ekassa/hero-bg.jpg') center center / cover no-repeat;
+    }
     &-text {
         font-weight: 400;
         font-size: 36.5px;
         line-height: 1.4em;
         max-width: 560px;
         color: var(--clr-600);
+        &--big {
+            font-size: 50px;
+            font-weight: 300;
+        }
     }
     &-group {
         margin-top: 50px;
