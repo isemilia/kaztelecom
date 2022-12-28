@@ -6,6 +6,7 @@
         margin-top: 60px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+        column-gap: 26px;
     }
     &-item {
         max-width: 340px;
@@ -45,6 +46,7 @@
             }
         }
         &-text {
+            font-family: var(--ff-secondary);
             font-weight: 600;
             font-size: 20px;
             line-height: 1.15em;
