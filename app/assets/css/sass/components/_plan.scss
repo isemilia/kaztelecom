@@ -5,11 +5,11 @@
     &-wrap {
         margin-top: 60px;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         column-gap: 26px;
     }
     &-item {
-        max-width: 340px;
+        // max-width: 340px;
         &-head {
             background: linear-gradient(256.82deg, var(--clr-300) 0%, var(--clr-200) 94.42%);
             border-radius: 20px;
