@@ -24,3 +24,10 @@ body {
     backdrop-filter: blur(10px);
     border-radius: 20px;
 }
+
+.d-flex {
+    display: flex;
+    &.ai-center {
+        align-items: center;
+    }
+}

@@ -4,11 +4,13 @@
     padding: 88px 0 50px;
     &-wrap {
         margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
     }
     &-item {
         max-width: 340px;
         &-head {
-            background: linear-gradient(256.82deg, #0171BB 0%, #BE264C 94.42%);
+            background: linear-gradient(256.82deg, var(--clr-300) 0%, var(--clr-200) 94.42%);
             border-radius: 20px;
             padding: 30px 22px 18px;
             display: flex;
@@ -18,10 +20,10 @@
         &-body {
             padding: 52px 22px 40px;
             display: grid;
-            grid-template-rows: minmax(90px, auto);
+            grid-template-rows: minmax(110px, auto);
             grid-auto-rows: auto;
-            row-gap: 20px;
             justify-items: center;
+            row-gap: 25px;
         }
         &-term {
             display: flex;
@@ -49,7 +51,19 @@
             text-align: center;
             color: var(--clr-100);
             &:not(:last-child) {
-                margin-bottom: 1.1em;
+                margin-bottom: 1em;
+            }
+            &--save {
+                color: var(--clr-300);
+                --icon-size: 20px;
+                &::before {
+                    content: '';
+                    width: var(--icon-size);
+                    height: var(--icon-size);
+                    background: url('../img/icons/plan-economy.svg') center center / contain no-repeat;
+                    display: inline-block;
+                    margin-right: .4em;
+                }
             }
         }
     }
