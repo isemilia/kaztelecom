@@ -1,0 +1,48 @@
+.message {
+    margin-top: 45px;
+    padding: 83px 0 87px;
+    background: url('../img/home/message-bg.jpg') center center / cover no-repeat;
+    &-box {
+        max-width: 730px;
+        @media (min-width: 768px) {
+            margin-left: auto;
+        }
+    }
+    &-text {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 1.4em;
+        color: var(--clr-600);
+    }
+    &-form {
+        margin-top: 40px;
+        display: grid;
+        row-gap: 30px;
+        @media (min-width: 576px) {
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 20px;
+        }
+        input, textarea {
+            @include InputBox;
+            display: block;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 1.4em;
+            padding: 16px 20px;
+        }
+        input {
+            border-radius: 200px;
+        }
+        textarea {
+            border-radius: 30px;
+            min-height: 180px;
+        }
+        .first, .last {
+            grid-column: 1 / -1;
+        }
+        button {
+            margin-top: 10px;
+            max-width: fit-content;
+        }
+    }
+}
