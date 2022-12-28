@@ -5,7 +5,7 @@
     &-wrap {
         margin-top: 60px;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
         column-gap: 26px;
     }
     &-item {
@@ -68,34 +68,52 @@
                 }
             }
         }
-        &--last {
+    }
+    &-outer-item {
+        &.first {
+            position: relative;
+            --grad-ball: 184px;
+            &::before {
+                content: '';
+                background: url('../img/decorations/gradient-ball.png') center center / cover no-repeat;
+                width: var(--grad-ball);
+                height: var(--grad-ball);
+                display: block;
+                position: absolute;
+                bottom: 59px;
+                left: -134px;
+                border-radius: 100%;
+                z-index: -100;
+            }
+        }
+        &.last {
             position: relative;
             z-index: 1;
             --star-size: 30px;
             --circle-size: 74px;
             &::after {
-                content: '';
                 width: var(--star-size);
                 height: var(--star-size);
                 background: url('../img/icons/blue-star-outline.svg') center center / contain no-repeat;
-                display: block;
-                position: absolute;
                 top: calc(var(--circle-size) / -8);
                 right: calc(var(--circle-size) / -7.5);
             }
             &::before {
-                content: '';
                 width: var(--circle-size);
                 height: var(--circle-size);
                 // background: url('../img/decorations/grey-circle.png') center center / contain no-repeat;
-                background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(171, 193, 201, 0.6));
-                display: block;
-                position: absolute;
+                background: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(171, 193, 201, 0.4));
                 top: calc(var(--circle-size) / -2.4);
                 right: calc(var(--circle-size) / -2.5);
-                backdrop-filter: blur(8px);
+                backdrop-filter: blur(6px);
                 border-radius: 100%;
                 transform: rotate(32deg);
+            }
+            &::before, &::after {
+                z-index: 2;
+                content: '';
+                display: block;
+                position: absolute;
             }
         }
     }
