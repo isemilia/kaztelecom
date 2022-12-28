@@ -19,7 +19,9 @@
     }
     .reasons {
         margin-top: 44px;
+        --item-icon-size: 70px;
         &-wrap {
+            margin-top: 40px;
             display: grid;
             &[data-cols='1'] {
                 grid-template-columns: 1fr;
@@ -29,9 +31,12 @@
             display: flex;
             align-items: center;
             column-gap: 30px;
+            &:not(:last-child) {
+                margin-bottom: 36px;
+            }
             &-icon {
-                height: 70px;
-                width: 70px;
+                height: var(--item-icon-size);
+                width: var(--item-icon-size);
                 display: grid;
                 place-content: center;
             }
@@ -45,6 +50,13 @@
                 font-size: 18px;
                 line-height: 1.4em;
             }
+        }
+        &-group {
+            margin-top: 60px;
+            display: flex;
+            flex-direction: column;
+            max-width: 480px;
+            row-gap: 20px;
         }
     }
 }
