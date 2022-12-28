@@ -1,5 +1,21 @@
 .reviews {
     padding: 50px 0 45px;
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        background: url('../img/decorations/reviews-blur-bottom.png') center center / contain no-repeat;
+        width: 100%;
+        max-width: 942px;
+        height: 412px;
+        filter: blur(70px);
+        opacity: .3;
+        z-index: -1;
+    }
     &-item {
         border: 2px solid var(--clr-600);
         border-radius: 0 20px 0 20px;
