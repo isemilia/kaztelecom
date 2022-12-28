@@ -16,5 +16,6 @@
 @import 'components/footer';
 
 body {
-    background-image: url('../img/decorations/body-bg.png') center top / cover no-repeat !important;
+    background: unset;
+    background: url('../img/decorations/body-bg.png') center top / cover no-repeat;
 }
