@@ -21,6 +21,7 @@
             grid-template-rows: minmax(90px, auto);
             grid-auto-rows: auto;
             row-gap: 20px;
+            justify-items: center;
         }
         &-term {
             display: flex;
