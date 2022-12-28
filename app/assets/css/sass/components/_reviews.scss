@@ -1,0 +1,97 @@
+.reviews {
+    padding: 50px 0 45px;
+    &-item {
+        border: 2px solid var(--clr-600);
+        border-radius: 0 20px 0 20px;
+        padding: 16px 10px 32px;
+        margin: 0 auto;
+        &-title, &-body {
+            color: var(--clr-100);
+            max-width: 480px;
+            margin: 0 auto;
+        }
+        &-title {
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 1.4em;
+        }
+        &-body {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 1.4em;
+            margin-top: 1em;
+        }
+    }
+    &-item-inner {
+        border-radius: 90px 0 90px 0;
+        overflow: hidden;
+    }
+    &-item-outer {
+        margin: 0 auto;
+        max-width: 706px;
+        position: relative;
+        &::after, &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 62px;
+            height: 48px;
+        }
+        &::before {
+            background: url('../img/icons/quotes-upper.svg') center center / contain no-repeat;
+            top: 0;
+            left: 0;
+        }
+        &::after {
+            background: url('../img/icons/quotes-lower.svg') center center / contain no-repeat;
+            bottom: 0;
+            right: 0;
+        }
+    }
+    &-wrap {
+        position: relative;
+        margin: 48px auto 0;
+        max-width: fit-content;
+    }
+    &-swiper {
+        max-width: 720px;
+    }
+    &-pagination {
+        margin-top: 58px;
+        display: flex;
+        justify-content: center;
+        z-index: 20;
+        inset: unset;
+        .swiper-pagination-bullet {
+            width: 14px;
+            height: 14px;
+            background: transparent;
+            border: 2px solid var(--clr-300);
+            padding: 0;
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+            &-active {
+                background-color: var(--clr-300);
+            }
+        }
+    }
+    &-btn {
+        background: transparent;
+        border: 0;
+        position: absolute;
+        top: 46%;
+        transform: translateY(-50%);
+        z-index: 20;
+        --distance: -110px;
+        &--next {
+            right: var(--distance);
+        }
+        &--prev {
+            left: var(--distance);
+        }
+        @media (max-width: 1629px) {
+            --distance: 0px;
+        }
+    }
+}
