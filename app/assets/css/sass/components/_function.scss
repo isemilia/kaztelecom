@@ -24,6 +24,26 @@
                 }
             }
         }
+        &[data-elem-position=bottom] {
+            margin-bottom: -280px;
+            padding-bottom: 280px;
+            overflow: hidden;
+            .function {
+                &::after {
+                    content: '';
+                    background:url('../img/decorations/gradient-ball.png') center center / cover no-repeat;
+                    display: block;
+                    width: 415px;
+                    height: 415px;
+                    border-radius: 100%;
+                    position: absolute;
+                    bottom: -232px;
+                    right: -97px;
+                    filter: blur(20px);
+                    z-index: 10;
+                }
+            }
+        }
     }
     
     &-subtitle {
@@ -49,21 +69,30 @@
             row-gap: 30px;
             max-width: 920px;
         }
+        &[data-cols='2'] {
+            grid-template-columns: repeat(2, minmax(280px, 1fr));
+            column-gap: clamp(40px, 10vw, 90px);
+            row-gap: 70px;
+            max-width: 1000px;
+        }
     }
     &-item {
         --icon-size: 70px;
         display: flex;
         align-items: center;
         column-gap: 20px;
-        max-width: 200px;
         &-icon {
             height: var(--icon-size);
+            flex-shrink: 0;
         }
         &-text {
             font-weight: 500;
             font-size: 18px;
             line-height: 1.4em;
             max-width: 100px;
+            &--wide {
+                max-width: 390px;
+            }
         }
     }
 }

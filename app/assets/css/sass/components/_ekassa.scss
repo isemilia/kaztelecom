@@ -64,6 +64,11 @@
             &:not(:last-child) {
                 margin-bottom: 36px;
             }
+            &.mb-small {
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+            }
             &-main {
                 max-width: 605px;
             }
