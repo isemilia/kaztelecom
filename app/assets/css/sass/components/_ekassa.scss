@@ -52,6 +52,10 @@
             &[data-cols='1'] {
                 grid-template-columns: 1fr;
             }
+            &[data-cols='2'] {
+                grid-template-columns: repeat(2, 1fr);
+                column-gap: 60px;
+            }
         }
         &-item {
             display: flex;
@@ -68,6 +72,7 @@
                 width: var(--item-icon-size);
                 display: grid;
                 place-content: center;
+                flex-shrink: 0;
             }
             &-title {
                 font-weight: 700;
