@@ -26,7 +26,6 @@
     "not dead"
   ],
   "dependencies": {
-    "gulp": "^4.0.2",
     "update": "^0.7.4"
   }
 }
