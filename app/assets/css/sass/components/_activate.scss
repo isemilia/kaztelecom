@@ -53,6 +53,11 @@
                 border-radius: 100%;
                 background: url('../img/decorations/dashed-border-opaque.png') center center / cover no-repeat;
             }
+            &--full {
+                &::before {
+                    background: url('../img/decorations/dashed-border.png') center center / cover no-repeat;
+                }
+            }
         }
         &-title {
             margin-top: 30px;
